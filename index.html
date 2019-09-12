@@ -3,10 +3,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Resume</title>
 
     <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Vesper+Libre&display=swap" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -40,11 +41,11 @@
       </div>
       <div class="social-links-container">
         <div class="github-link">
-          <img />
+          <img src="img/github-logo.png" />
           <p>/Robert-D-Campbell</p>
         </div>
         <div class="linkedin-link">
-          <img />
+          <img src="img/linked-icon.png" />
           <p>/rcampbell509</p>
         </div>
       </div>
@@ -52,10 +53,10 @@
     <!-- End of Banner and contact info -->
 
     <!-- Skills / Projects section -->
-    <div class="skills-projects-wrapper">
-      <section>
+    <section>
+      <div class="skills-projects-wrapper">
         <div class="skills-container">
-          <h3>Skills</h3>
+          <h3>SKILLS</h3>
           <div class="language-skills">
             <h4>LANGUAGES / FRAMEWORKS</h4>
             <ul>
@@ -82,14 +83,27 @@
             </ul>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="projects-container">
+          <h3>PROJECTS</h3>
+          <div class="projects">
+            <a target="_blank" href='https://inlandnorthwest.tech'><h4>INLAND NORTHWEST TECHNOLOGISTS</h3></a>
+            <p>
+              Building INT's website during my internship at Uxiliary is one of
+              my greatest accomplishments. This app was built using GatsbyJS,
+              GraphyQL, and Netlify CMS. This Website has responsive
+              breakpoints, reCaptcha secured contact form, social media curator,
+              and a paypal donation page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- End of Skills / Projects section -->
 
     <!--Education section-->
     <section>
       <div class="education-container">
-        <div class="education">
           <h3>EDUCATION</h3>
           <div class="school">
             <h4>WOZ-U</h4>
@@ -102,7 +116,6 @@
             </p>
           </div>
         </div>
-      </div>
     </section>
     <!-- End of Education section-->
     <!-- Work section-->
