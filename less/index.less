@@ -125,7 +125,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 section {
   display: block;
 }
@@ -176,6 +175,15 @@ li {
   font-family: @secondaryFont;
   @media (max-width: 500px) {
     font-size: @mobileP;
+  }
+}
+nav ul {
+  padding: 2%;
+  font-size: @title;
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    text-decoration: none;
   }
 }
 // Banner w/ Info //

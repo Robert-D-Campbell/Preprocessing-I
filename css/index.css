@@ -100,7 +100,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 section {
   display: block;
 }
@@ -157,6 +156,15 @@ li {
   li {
     font-size: 0.8rem;
   }
+}
+nav ul {
+  padding: 2%;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul a {
+  text-decoration: none;
 }
 header {
   background-image: url("../img/banner.jpeg");
