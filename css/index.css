@@ -1,1 +1,417 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-weight: 400;
+  font-family: "Vesper Libre", serif;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+li {
+  font-family: "Vesper Libre", serif;
+}
+@media (max-width: 500px) {
+  li {
+    font-size: 0.8rem;
+  }
+}
+nav ul {
+  padding: 2%;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul a {
+  text-decoration: none;
+}
+header {
+  background-image: url("../img/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+}
+@media (max-width: 500px) {
+  header {
+    height: 20vh;
+  }
+}
+header .title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 8%;
+  line-height: 1.4;
+}
+header .title-container h1 {
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  header .title-container h1 {
+    font-size: 1rem;
+  }
+}
+header .title-container h2 {
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  header .title-container h2 {
+    font-size: 0.6rem;
+  }
+}
+header .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 8% 0 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+@media (max-width: 500px) {
+  header h3 {
+    font-size: 0.6rem;
+  }
+}
+.section-one-container {
+  width: 90%;
+  margin: 5% auto;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.section-one-container .biography-container {
+  width: 200%;
+}
+.section-one-container .biography-container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .section-one-container .biography-container h3 {
+    font-size: 1rem;
+  }
+}
+.section-one-container .biography-container p {
+  margin-left: 2%;
+  line-height: 1.2;
+}
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social-links-container .github-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+  margin-right: 2%;
+}
+.social-links-container .github-link img {
+  margin-right: 2%;
+  width: 8%;
+}
+.social-links-container .linkedin-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+  margin-right: 2%;
+}
+.social-links-container .linkedin-link img {
+  margin: 2%;
+  width: 5%;
+}
+.skills-projects-wrapper {
+  width: 90%;
+  margin: 0 auto 5% auto;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.skills-projects-wrapper .skills-container {
+  width: 50%;
+}
+.skills-projects-wrapper .skills-container h3 {
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .skills-projects-wrapper .skills-container h3 {
+    font-size: 1rem;
+  }
+}
+.skills-projects-wrapper .skills-container .language-skills {
+  border-right: 1px solid black;
+  margin: 2%;
+}
+.skills-projects-wrapper .skills-container .language-skills h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .skills-projects-wrapper .skills-container .language-skills h4 {
+    font-size: 0.6rem;
+  }
+}
+.skills-projects-wrapper .skills-container .language-skills ul {
+  margin: 2%;
+  font-size: 0.9rem;
+}
+.skills-projects-wrapper .skills-container .soft-skills {
+  margin: 2%;
+}
+.skills-projects-wrapper .skills-container .soft-skills h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .skills-projects-wrapper .skills-container .soft-skills h4 {
+    font-size: 0.6rem;
+  }
+}
+.skills-projects-wrapper .skills-container .soft-skills ul {
+  margin: 2%;
+  font-size: 0.9rem;
+}
+.skills-projects-wrapper .projects-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.skills-projects-wrapper .projects-container h3 {
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .skills-projects-wrapper .projects-container h3 {
+    font-size: 1rem;
+  }
+}
+.skills-projects-wrapper .projects-container .projects {
+  margin: 2%;
+}
+.skills-projects-wrapper .projects-container .projects a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .skills-projects-wrapper .projects-container .projects a {
+    font-size: 0.6rem;
+  }
+}
+.skills-projects-wrapper .projects-container .projects p {
+  line-height: 1.2;
+  margin: 2%;
+}
+.education-container {
+  width: 90%;
+  margin: 0 auto 5% auto;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  line-height: 1.2;
+}
+.education-container h3 {
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .education-container h3 {
+    font-size: 1rem;
+  }
+}
+.education-container .school {
+  width: 60%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.education-container .school h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .education-container .school h4 {
+    font-size: 0.6rem;
+  }
+}
+.education-container .school p {
+  margin: 2%;
+}
+.work-container {
+  width: 90%;
+  margin: 0 auto 5% auto;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+.work-container h3 {
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .work-container h3 {
+    font-size: 1rem;
+  }
+}
+.work-container h4 {
+  margin: 1%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .work-container h4 {
+    font-size: 0.6rem;
+  }
+}
+.work-container p {
+  width: 60%;
+  margin-left: 2%;
+}
